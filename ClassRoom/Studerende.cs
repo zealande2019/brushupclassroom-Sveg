@@ -10,6 +10,10 @@ namespace ClassRoom
             Fødselsdag = fødselsdag;
             Fødslsmåned = fødselsmåned;
 
+            if (fødselsmåned < 1 || fødselsmåned > 12)
+            {
+                throw new ArgumentException();
+            }
         }
 
         public string Navn { get; private set; }
@@ -17,6 +21,8 @@ namespace ClassRoom
         public int Fødselsdag { get; private set; }
 
         public int Fødslsmåned { get; private set; }
+
+       
 
         public string Årstid()
         {
