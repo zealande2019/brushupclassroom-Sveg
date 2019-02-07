@@ -12,11 +12,11 @@ namespace ClassRoom
 
         }
 
-        public string Navn { get; set; }
+        public string Navn { get; private set; }
 
-        public int Fødselsdag { get; set; }
+        public int Fødselsdag { get; private set; }
 
-        public int Fødslsmåned { get; set; }
+        public int Fødslsmåned { get; private set; }
 
         public string Årstid()
         {
