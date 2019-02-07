@@ -23,7 +23,9 @@ namespace ClassRoom
 
             foreach (var studerende in klasseRum.Klasseliste)
             {
-                Console.WriteLine(studerende.Navn);
+                Console.WriteLine( $"Navn: {studerende.Navn}. " +
+                                   $"Fødselsdag: {studerende.Fødselsdag} - {studerende.Fødslsmåned}. " +
+                                   $"Denstuderende har semester start {klasseRum.SemesterStart}" );
             }
 
 
